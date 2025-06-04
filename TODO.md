@@ -1,0 +1,15 @@
+- [x] Handle dataset ratio in `classify_augmentations` function in `ultralytics/data/augment.py`
+- [x] Add random seed (fixed) in `ClassificationDataset` class in `ultralytics/data/dataset.py`
+- [x] Control Class Numbering in Training (also in `ClassificationDataset`)
+- [x] use top1 accuracy (not top5 average) - overriding `compute_fitness()`
+- [ ] DL Kashiot - check cropped objects
+- [ ] cancel corrupt_image filtering
+- [ ] use F1 score?
+- [ ] add option to add yaml training params?
+- [x] check LetterBox application - ultralytics/engine/predictor/base_predictory.py calls self.transforms = classify_transforms(imgsz[0]==size)
+- [ ] handle class names in postprocessingg
+- [ ] crop margin on train/test time -check + in skylock 
+- [ ] height augmentations: range
+- [ ] prepare `SkeyeBalmasSequences` validation set
+- [x] Add data cropping utils:
+    * for each dataset Class with methods `create_dataset(out_dir)`, `copy_dataset(out_dir)`
